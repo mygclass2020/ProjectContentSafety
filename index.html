@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ContentSafety</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <h1>CONTENT SAFETY</h1>
+    <div class="container">
+        <div class="section">
+            <h2>Text Moderation</h2>
+            <form id="rightinput">
+                <label>Enter sample text:</label><br />
+                <textarea id="leftInput1"></textarea><br />
+            </form>
+            <label>Result:</label>
+            <div id="resultDisplay1"></div>
+            <button id="leftSubmit" onclick = textmod()>Submit</button>
+        </div>
+      <div class="section">
+        <h2>Image Moderation</h2>
+        <label>Select image:</label>
+
+        <input type="file" accept="image/*" onchange="loadImage(event)" />
+        <div id="imageContainer">
+          <img id="imageDisplay" />
+        </div>
+        <br />
+        <img id="imageDisplay" /><br />
+        <label>Result:</label>
+        <div id="resultDisplay2"></div>
+        <button onclick="imagemod()">Submit</button>
+      </div>
+    </div>
+  </body>
+</html>

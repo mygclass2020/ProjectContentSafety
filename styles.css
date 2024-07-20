@@ -1,0 +1,60 @@
+h1{
+    text-align: center;
+  }
+  h2{
+      text-align: center;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .section {
+    width: 48%;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+
+  button {
+    width: 97%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #imageContainer {
+    border: 2px solid black;
+    width: 200px;
+    height: 275px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#imageDisplay {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+}
+.blurred {
+    filter: blur(8px);
+}
+
+textarea, #resultDisplay1, #resultDisplay2 {
+    width: 95%;
+    height: 250px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    resize: none;
+    margin: 10px 0;
+    padding: 8px;
+}
+
+#resultDisplay {
+    background-color: #f9f9f9;
+    overflow: auto;
+    resize: none;
+}
